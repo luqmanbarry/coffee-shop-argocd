@@ -7,3 +7,11 @@ resources:
 - ./coffee-shop.yaml
 - ./barista.yaml
 
+
+patches:
+- path: ./syncpolicy-patch.yaml
+  target:
+    group: argoproj.io
+    version: v1alpha1
+    kind: Application
+
